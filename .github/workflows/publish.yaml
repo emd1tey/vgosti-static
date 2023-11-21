@@ -28,6 +28,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ vars.CF_ACCOUNT_ID }}
-          projectName: ${{ github.head_ref }}
+          projectName: ${{ github.ref_name }}
           wranglerVersion: "3"
           directory: "build"
