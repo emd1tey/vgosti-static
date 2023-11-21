@@ -22,12 +22,12 @@ jobs:
           echo "SHA: ${{ github.sha }}"
           echo "${{ vars.CF_ACCOUNT_ID }}"
           echo "${{ vars.GITHUB_REPOSITORY }}"
+          echo "${{ env.GITHUB_REPOSITORY }}"
+          echo "$GITHUB_REPOSITORY"
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ vars.CF_ACCOUNT_ID }}
-          projectName: ${{ github.ref_name }}
-          wranglerVersion: "3"
-          directory: "build"
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
