@@ -17,7 +17,7 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          accountId: ${{ var.CF_ACCOUNT_ID }}
+          accountId: ${{ vars.CF_ACCOUNT_ID }}
           projectName: ${{ github.head_ref }}
           wranglerVersion: "3"
           directory: "build"
