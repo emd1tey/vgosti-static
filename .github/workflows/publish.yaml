@@ -32,4 +32,5 @@ jobs:
           accountId: ${{ vars.CF_ACCOUNT_ID }}
           projectName: "vgosti-static"
           directory: "dest"
+          branch: main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
