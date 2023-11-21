@@ -17,8 +17,11 @@ jobs:
         run: |
           echo "Repository: ${{ github.repository }}"
           echo "Event Name: ${{ github.event_name }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "Ref Name: ${{ github.ref_name }}"
           echo "SHA: ${{ github.sha }}"
           echo "${{ vars.CF_ACCOUNT_ID }}"
+          echo "${{ vars.GITHUB_REPOSITORY }}"
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
