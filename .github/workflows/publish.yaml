@@ -30,4 +30,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ vars.CF_ACCOUNT_ID }}
+          projectName: "vgosti-static"
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
