@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
   publish:
-    runs-on: [self-hosted, linux, ARM64]
+    runs-on: [self-hosted, linux, X64]
     permissions:
       contents: read
       deployments: write
