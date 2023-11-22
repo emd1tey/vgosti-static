@@ -6,9 +6,9 @@ RUN npm --version
 RUN node --version
 RUN npx --version
 
-RUN npm install  wrangler@latest --save-dev
+RUN npx install  wrangler@latest --save-dev
 
-RUN whereis wrangler
+RUN wrangler --version
 
 CMD ["wrangler", "dev"]
 
