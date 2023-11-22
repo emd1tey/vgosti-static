@@ -39,4 +39,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: $DOCKER_TAG3
+          tags: ${{ DOCKER_TAG3 }}
