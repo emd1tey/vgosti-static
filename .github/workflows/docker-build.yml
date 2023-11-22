@@ -22,6 +22,7 @@ jobs:
           echo "DOCKER_TAG1=${{ github.repository }}:${GITHUB_REF#refs/heads/}-${{ github.run_id }}" >> $GITHUB_ENV
           echo "DOCKER_TAG2=${{ github.repository }}:${GITHUB_REF#refs/heads/}-${{ github.run_id }}" >> $GITHUB_ENV
           echo "DOCKER_TAG3=${{ github.ref_name }}-${{ github.run_id }}" >> $GITHUB_ENV
+          echo $DOCKER_TAG3
           export
 
 
