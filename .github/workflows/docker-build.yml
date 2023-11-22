@@ -7,7 +7,7 @@ on:
 
 jobs:
   docker-build:
-    runs-on: [self-hosted, linux, X64]
+    runs-on: [default]
     steps:
 
       - name: Checkout
@@ -37,4 +37,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: $DOCKER_TAG3
+          tags: $DOCKER_TAG1
