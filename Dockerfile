@@ -1,8 +1,13 @@
 FROM node:latest
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-RUN npm install -g @cloudflare/wrangler
+RUN npm --version
+RUN node --version
+
+RUN npm install  wrangler@latest --save-dev
+
+RUN whereis wrangler
 
 CMD ["wrangler", "dev"]
 
