@@ -8,7 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./ .
 
-RUN sh site-gen.bash
+RUN chmod +x site-gen.bash && ./site-gen.sh
 
 RUN pelican content
 
