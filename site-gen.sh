@@ -1,7 +1,5 @@
 #!/bin/bash
 
-mkdir content 
-
 for i in `seq 1 20`
 do
    echo "Title: Article $i" > "content/article$i.md"
