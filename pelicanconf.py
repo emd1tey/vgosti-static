@@ -11,8 +11,8 @@ TIMEZONE = 'Europe/Minsk'
 DEFAULT_LANG = 'en'
 
 # Theme settings
-#THEME = 'notmyidea'  # Default theme; you can change it as per your requirement
-THEME = 'bootstrap2-dark'  # Default theme; you can change it as per your requirement
+THEME = 'notmyidea'  # Default theme; you can change it as per your requirement
+#THEME = 'bootstrap2-dark'  # Default theme; you can change it as per your requirement
 
 # URL settings
 ARTICLE_URL = 'articles/{slug}.html'
