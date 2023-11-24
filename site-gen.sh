@@ -1,6 +1,8 @@
 #!/bin/bash
 
-for i in {1..20}
+mkdir content 
+
+for i in `seq 1 20`
 do
    echo "Title: Article $i" > "content/article$i.md"
    echo "Date: 2023-03-$(printf "%02d" $i) 10:00" >> "content/article$i.md"
