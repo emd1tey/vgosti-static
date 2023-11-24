@@ -1,10 +1,17 @@
-FROM node:latest
+FROM python:3-alpine
 
 WORKDIR /app
 
-RUN npx install  wrangler@latest --save-dev
+COPY requirements.txt ./
 
-RUN wrangler --version
+RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["wrangler", "dev"]
+COPY ./ .
 
+RUN sh site-gen.bash
+
+RUN pelican content
+
+EXPOSE 8000
+
+CMD ["pelican","--listen","-b","0.0.0.0"]
