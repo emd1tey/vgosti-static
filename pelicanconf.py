@@ -15,10 +15,10 @@ THEME = 'notmyidea'  # Default theme; you can change it as per your requirement
 #THEME = 'bootstrap2-dark'  # Default theme; you can change it as per your requirement
 
 # URL settings
-ARTICLE_URL = '{slug}.md'
-ARTICLE_SAVE_AS = '{slug}.md'
-PAGE_URL = 'pages/{slug}.html'
-PAGE_SAVE_AS = 'pages/{slug}.html'
+#ARTICLE_URL = '{slug}.md'
+#ARTICLE_SAVE_AS = '{slug}.html'
+#PAGE_URL = 'pages/{slug}.html'
+#PAGE_SAVE_AS = 'pages/{slug}.html'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

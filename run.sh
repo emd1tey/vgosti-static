@@ -9,3 +9,8 @@ do
    echo "This is the content of article $i." >> "content/article$i.md"
 done
 
+pelican content 
+
+ls -la output
+
+pelican --listen -b 0.0.0.0
