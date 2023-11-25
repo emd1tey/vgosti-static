@@ -15,8 +15,8 @@ THEME = 'notmyidea'  # Default theme; you can change it as per your requirement
 #THEME = 'bootstrap2-dark'  # Default theme; you can change it as per your requirement
 
 # URL settings
-ARTICLE_URL = 'articles/{slug}.html'
-ARTICLE_SAVE_AS = 'articles/{slug}.html'
+ARTICLE_URL = '{slug}.md'
+ARTICLE_SAVE_AS = '{slug}.md'
 PAGE_URL = 'pages/{slug}.html'
 PAGE_SAVE_AS = 'pages/{slug}.html'
 

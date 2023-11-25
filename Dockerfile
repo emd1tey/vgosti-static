@@ -8,9 +8,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY / .
 
-RUN chmod +x site-gen.sh && ./site-gen.sh
+RUN bash site-gen.sh
 
-RUN pelican content
+RUN pelican content && ls -la output
 
 EXPOSE 8000
 
